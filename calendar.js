@@ -1,5 +1,5 @@
     var width = 960,
-        height = 750,
+        height = 480,
         cellSize = 17; // cell size
 
     var no_months_in_a_row = Math.floor(width / (cellSize * 7 + 50));

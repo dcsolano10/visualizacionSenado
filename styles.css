@@ -4,11 +4,13 @@
       }
 
       #is{
-        padding-top: 50px;
-    padding-right: 200px;
+    padding-right: 300px;
     padding-bottom: 50px;
-    padding-left: 200px;
+    padding-left: 300px;
     font:20px sans-serif;
+      }
+      .heat{
+    margin-left: 290px;
       }
 
       #chart{
