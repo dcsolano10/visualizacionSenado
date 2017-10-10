@@ -46,7 +46,7 @@ var margin = { top: 50, right: 0, bottom: 100, left: 30 },
         },
         function(error, data) {
           var colorScale = d3.scale.quantile()
-              .domain([0, buckets - 1, d3.max(data, function (d) { return d.value; })])
+              .domain([22, buckets - 1, d3.max(data, function (d) { return d.value; })])
               .range(colors);
 
           var cards = svg1.selectAll(".hour")
