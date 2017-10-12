@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
+
 <head>
-    <title>Asistencia Senado</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://d3js.org/d3.v3.js"></script>
-    <link rel="shortcut icon" href="">
+  <title>Asistencia Senado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!--Pudiste haber usado la versión 4, aunque te hayas basado en un código que estaba en v3, adapatarlo hubiera sido un buen ejercicio-->
+  <script src="https://d3js.org/d3.v3.js"></script>
+  <link rel="shortcut icon" href="">
 
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        </div>
+      </div>
     </div>
-</nav>
-<div class="jumbotron text-center">
+  </nav>
+  <div class="jumbotron text-center">
     <h1>Asistencia a plenarias del Senado en Colombia</h1>
     <br>
     <h2>¿Están asistiendo los senadores de la República a las plenarias?</h2>
-</div>
-<h3 id="is">¿Hay correlaciones entre la asistencia de senadores a las plenarias del Senado? Podemos observar que de las
+  </div>
+  <!--Los id de los elementos html son únicos. Cuando quieras utilizar una misma regla css para más elemento, utiliza clases -->
+  <h3 id="is">¿Hay correlaciones entre la asistencia de senadores a las plenarias del Senado? Podemos observar que de las
     31 plenarias del Senado que se han convocado, hasta junio del año 2017, el senador Álvaro Uribe Velez ha coincidido
     con los senadores Armando Benedetti, Musa Besaile, Jose Obdulio Gaviria Vélez y Antonio Navarro Wolf en menos de 20
     ocasiones. Mientras que ha coincidido con la senadora Paloma Valencia en más de 25 ocasiones. Por otro lado, el
     senador Iván Duque ha coincidido en más de 25 ocasiones con los senadores Jose Obdulio Gaviria Vélez, Antonio
     Navarro Wolf, Jorge Robledo y Paloma Valencia.</h3>
-<div id="chart1" class="heat"></div>
+  <div id="chart1" class="heat"></div>
 
-<h3 id="is">En los primeros 6 meses del año 2017 se ha reportado la asistencia de los senadores a las plenarias.
+  <h3 id="is">En los primeros 6 meses del año 2017 se ha reportado la asistencia de los senadores a las plenarias.
     Queremos saber si los senadores están cumpliendo con su deber. En la gráfica vemos un bajo porcentaje de asistencia
     al inicio del año, el cual aumenta a alrededor del 90% entre mayo y junio. Por medio de la gráfica es posible hacer
     seguimiento a la asistencia de senadores a las plenarias, de esta manera podremos vigilar las actuaciones de
-    nuestros representantes. Se debe tener en cuenta que las plenarias del Senado se realizan únicamente los martes y miércoles del mes. Observando la gráfica se evidencia que en febrero se realizaron múltiples plenarias extraordinarias, a las cuales asistieron menos del 30% de senadores en promedio; estas plenarias fueron en las cuales se aprobaron varias leyes del proyecto legislativo para la paz. ¿Por qué en un proyecto legislativo tan importante como la paz hubo una participación tan baja?</hz>
+    nuestros representantes. Se debe tener en cuenta que las plenarias del Senado se realizan únicamente los martes y miércoles del mes. Observando la gráfica se evidencia que en febrero se realizaron múltiples plenarias extraordinarias, a las cuales asistieron menos del 30% de senadores en promedio; estas plenarias fueron en las cuales se aprobaron varias leyes del proyecto legislativo para la paz. ¿Por qué en un proyecto legislativo tan importante como la paz hubo una participación tan baja?</h3>
 
-    <div id="chart" class="clearfix"></div>
+  <div id="chart" class="clearfix"></div>
 
 
-    <script src="jquery-latest.min.js" type="text/javascript"></script>
-    <script src="calendar.js"></script>
-    <script src="heat1.js"></script>
+  <script src="jquery-latest.min.js" type="text/javascript"></script>
+  <script src="calendar.js"></script>
+  <script src="heat1.js"></script>
 
 
 </body>
+
 </html>
